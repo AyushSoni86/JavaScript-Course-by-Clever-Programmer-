@@ -42,7 +42,7 @@ function tipCalculator(food, tip) {
     const total = sum(tipAmount, food);
     return total;
 }
-const tipCalculatorArrow = (food, tip)=> {
+const tipCalculatorArrow = (food, tip) => {
     const tipPercentage = tip / 100;
     const tipAmount = tipPercentage * food;
     const total = sum(tipAmount, food);
@@ -55,3 +55,16 @@ console.log("The total amount pof food  is ", tipCalculatorArrow(10000, 5));
 const sumArrow = (a, b) => {
     return a + b;
 }
+
+// Arrays 
+
+// Objects
+const introducer = (name, shirt, mobile) => {
+    const person = {
+        name: name,
+        shirt: shirt,
+        mobile: mobile
+    };   
+    return `Hi my name is ${person.name} and the color of my shirt is ${person.shirt} and I have ${person.mobile} `;
+}
+console.log(introducer("Ayush", "Blue", "iPhone 13"));
