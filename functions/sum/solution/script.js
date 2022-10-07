@@ -1,1 +1,1 @@
-console.log("Sum solution"))
+console.log("Sum solution")
