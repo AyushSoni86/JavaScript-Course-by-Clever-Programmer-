@@ -102,6 +102,7 @@ const introducer = (name, shirt, mobile) => {
 }
 // console.log(introducer("Ayush", "Blue", "iPhone 13"));
 
+
 // for loop in javascript 
 const fruits = ['apple', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry'];
 
@@ -112,3 +113,49 @@ const fruits = ['apple', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 
 // for (const fruit of fruits) {
 //     console.log(fruit);
 // }
+
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let i = 0; i < number.length; i++) {
+//     console.log(number[i]);   
+// }
+// for (nums of number){
+//     console.log(nums);
+// }
+
+// let res = [];
+// for (const nums of number) {
+//     res.push(nums * 2);
+// }
+// console.log(res);
+
+// function to double the array elements 
+const double = (number) => {
+    let res = [];
+    for (nums of number) {
+        res.push(nums * 2);
+    }
+    return res;
+}
+
+// console.log(double([1,2,3,4,5,8,9]));
+// function to square the array elements 
+const square = (number) =>{
+    let result = [];
+    for(const num of number){
+        result.push(num*num);
+    }
+    return result;
+}
+
+// console.log(square([2,3,4,5,6]));
+
+//letter counter using loops
+const letterCounter = () =>{
+    const phrase = "hey, can you come to grocery store with me";
+    let cnt = 0;
+    for(letter in phrase){
+        cnt++;
+    }
+    return cnt;
+}
+console.log(letterCounter());
