@@ -48,7 +48,7 @@ const tipCalculatorArrow = (food, tip) => {
     const total = sum(tipAmount, food);
     return total;
 }
-console.log("The total amount pof food  is ", tipCalculatorArrow(10000, 5));
+// console.log("The total amount pof food  is ", tipCalculatorArrow(10000, 5));
 
 
 // Arrow functions 
@@ -58,13 +58,57 @@ const sumArrow = (a, b) => {
 
 // Arrays 
 
+// let groceries= ['apple', 'banana', 'pear', 'orange','berry'];
+// console.log(groceries);
+// groceries.push("pineapple");
+// console.log(groceries)
+// console.log(groceries.length);
+// slicedArray = groceries.slice(1,3);
+// console.log(slicedArray);
+
+
+
 // Objects
+// dot notation and bracket notation in objects 
+const person = {
+    name: "Ayush",
+    shirt: 'black',
+    email: 'ayusoni86@gmail.com'
+}
+person.phone = '9588422464'
+
+// console.log(person.name)
+// console.log(person.shirt)
+// console.log(person.email)
+
+// console.log(person['name'])
+// console.log(person['shirt'])
+// console.log(person['email'])
+
+// console.log(person)
+
 const introducer = (name, shirt, mobile) => {
     const person = {
         name: name,
         shirt: shirt,
-        mobile: mobile
-    };   
-    return `Hi my name is ${person.name} and the color of my shirt is ${person.shirt} and I have ${person.mobile} `;
+        mobile: mobile,
+        assets: 100000,
+        liability: 50000,
+        networth: function () {
+            return this.assets - this.liability;
+        }
+    };
+    return `Hi my name is ${person.name} and the color of my shirt is ${person.shirt} and I have ${person.mobile} and my nte worth is ${person.networth()} USD `;
 }
-console.log(introducer("Ayush", "Blue", "iPhone 13"));
+// console.log(introducer("Ayush", "Blue", "iPhone 13"));
+
+// for loop in javascript 
+const fruits = ['apple', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry', 'banana', 'pear', 'orange', 'berry'];
+
+// for (let index = 0; index < fruits.length; index++) {
+//     console.log(index , fruits[index]); 
+// }
+
+// for (const fruit of fruits) {
+//     console.log(fruit);
+// }
