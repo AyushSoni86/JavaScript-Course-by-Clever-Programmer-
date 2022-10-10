@@ -9,11 +9,11 @@
 // Keep in mind which month has 30 days, 31 days, and 28 days
 // Use everything you learned to get to the answer
 
-const daysInMonth = (month,year) => {
-  
+const daysInMonth = (month, year) => {
+
 }
 
 // Example:
-// daysInMonth(2,2018) -> 28
-// days(4,654) -> 30
-// days(2,2020) -> 29
+// daysInMonth(2, 2018) -> 28
+// days(4, 654) -> 30
+// days(2, 2020) -> 29

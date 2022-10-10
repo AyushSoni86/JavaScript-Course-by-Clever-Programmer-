@@ -187,15 +187,59 @@ const num = [10, 2, 3, 4];
 
 // finding max element from array
 const maxElement = (number) => {
-    max = number[0];
-    for(const num of number){
-        if (num > max) {
-            max = num;
-        }
+  max = number[0];
+  for (const num of number) {
+    if (num > max) {
+      max = num;
     }
-    return max;
+  }
+  return max;
 };
-console.log(maxElement(num));
+// console.log(maxElement(num));
 
 
 //continuing the loops questions
+// letter frequency calculator
+const letterFrequency = (phrase) => {
+  let frequency = {};
+  // console.log(phrase);
+  for (const letter of phrase) {
+    if (letter in frequency) {
+      frequency[letter] += 1;
+    } else {
+      frequency[letter] = 1;
+    }
+  }
+  return frequency;
+}
+// console.log(letterFrequency(phrase));
+
+// word frequency calculator
+const wordFrequency = (phrase) => {
+  let frequency = {};
+  words = phrase.split(' ');
+  // console.log(words);
+  for (const word of words) {
+    if (word in frequency) {
+      frequency[word] += 1;
+    } else {
+      frequency[word] = 1;
+    }
+  }
+  return frequency;
+}
+
+// words frequency using pre created function
+const wordFrequency2 = (phrase) => {
+  words = phrase.split(' ');
+  return letterFrequency(words);
+}
+
+// let phrase = 'hello world hello hey there hey hello';
+// phrase= prompt('Write your sentecne : ');
+// console.log(wordFrequency2(phrase));
+
+
+// higher order functions 
+// map, reduce and filter
+ 
