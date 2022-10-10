@@ -242,4 +242,59 @@ const wordFrequency2 = (phrase) => {
 
 // higher order functions 
 // map, reduce and filter
- 
+
+// map 
+let array = [1, 2, 3, 4, 5, 6];
+array.map(number => {
+  number = number * 2;
+  // console.log(number)
+});
+
+let array2 = [1, 2, 3, 4, 5, 6].map(number =>
+  number = number * 2
+);
+
+// console.log(array);
+// console.log(array2);
+
+const doubleMap = (number) => {
+  return number.map(number => number * 2);
+}
+// console.log(doubleMap([1, 2, 3, 4, 5, 6]));
+
+// filter
+const filter = (number, gt) => {
+  let result = [];
+  for (const num of number) {
+    if (num > gt) {
+      result.push(num);
+    }
+  }
+  return result;
+}
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(arr.filter(num => num >= 3 && num < 7));
+
+const actor = [
+  { name: 'Vaibhavi', networth: 12 },
+  { name: 'Kshitij', networth: 150 },
+  { name: 'Amardeep', networth: 32 },
+  { name: 'Ayush', networth: 999 },
+  { name: 'Abhishek', networth: 21 },
+];
+
+let result = actor.filter(actor => actor.networth > 12);
+console.log(result);
+
+// this line creates an array of names from the actor object and join them by using join method
+let names = result.map(actor => actor.name).join(', ');
+
+// playground.innerHTML = `<h2>${result[0].name}</h2>`;
+playground.innerHTML = `<h1>${names}</h1>`;
+
+
+// reduce
+
+
+
+
