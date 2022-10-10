@@ -196,3 +196,6 @@ const maxElement = (number) => {
     return max;
 };
 console.log(maxElement(num));
+
+
+//continuing the loops questions
