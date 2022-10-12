@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#red,
+#blue,
+#green {
+  width: 100px;
+  height: 100px;
+}
+
+#red {
+  background-color: red;
+}
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
+#clear-score{
+    margin-top: 20px;
+}

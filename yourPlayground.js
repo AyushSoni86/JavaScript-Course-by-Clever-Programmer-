@@ -290,7 +290,7 @@ console.log(result);
 let names = result.map(actor => actor.name).join(', ');
 
 // playground.innerHTML = `<h2>${result[0].name}</h2>`;
-playground.innerHTML = `<h1>${names}</h1>`;
+// playground.innerHTML = `<h1>${names}</h1>`;
 
 
 // reduce
