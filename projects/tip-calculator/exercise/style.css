@@ -26,6 +26,7 @@ body {
 }
 
 .title {
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0.6rem;
 }
@@ -44,7 +45,7 @@ body {
   background: none;
   border: none;
   outline: none;
-  padding: none;
+  padding: 10px;
 }
 
 .buttonContainer {

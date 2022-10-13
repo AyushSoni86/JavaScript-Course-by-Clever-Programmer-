@@ -23,7 +23,7 @@
 // blue.onclick = () => console.log('blue')
 
 let squares = document.querySelectorAll('.colorSquare')
-console.log(squares)
+// console.log(squares)
 
 // console.log(squares[0].value)
 // console.log(squares[1].value)
@@ -48,4 +48,25 @@ function clearScore() {
     });
 }
 const clearGame = document.getElementById('clear-score');
-clearGame.onclick = () => clearScore()
+// clearGame.onclick = () => clearScore()
+
+const randomSelectFromArray = (fruits) => {
+    const randomNumber = Math.floor(Math.random() * fruits.length);
+    return fruits[randomNumber];
+}
+
+
+let fruits = ['banana', 'apple', 'orange', 'guava']
+// console.log(randomSelectFromArray(fruits));
+
+const weatherScore =(wheather) =>{
+    let score;
+    if (wheather == 'rainy') {
+        score = 1;
+    }else if (wheather == 'sunny') {
+        score = -1;
+    } else {
+        score = 0;
+    }
+    return score;
+}
