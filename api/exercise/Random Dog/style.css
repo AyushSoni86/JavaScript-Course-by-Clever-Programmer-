@@ -54,3 +54,11 @@ img:hover {
   justify-content: center;
   align-items: center;
 }
+
+button:cli{
+
+}
+
+button:hover{
+  transform: scale(1.03);
+}
