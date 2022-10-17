@@ -1,4 +1,4 @@
-// console.log("hello world");
+
 // user input
 // fruit = prompt("what is your favourite fruit ?");
 // console.log(fruit);
@@ -284,7 +284,7 @@ const actor = [
 ];
 
 let result = actor.filter(actor => actor.networth > 12);
-console.log(result);
+// console.log(result);
 
 // this line creates an array of names from the actor object and join them by using join method
 let names = result.map(actor => actor.name).join(', ');

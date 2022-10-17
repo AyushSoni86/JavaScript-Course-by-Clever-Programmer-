@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, rgb(80, 80, 209) , rgb(80, 179, 80));
+}
+.apiCall{
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+}
+#dogButton {
+  margin: 10px 60px;
+  padding: 20px;
+  border: none;
+  background-color: rgba(63, 207, 135, 0.925);
+  border-radius: 13px;
+  box-shadow: 4px 3px 11px 0px;
+  size: 10px;
+  font-size: 32px;
+  font-weight: bold;
+}
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 4px 3px 11px 0px;
+  transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.08); 
+    box-shadow: 6px 3px 11px 0px;
+  }
+#dogImage {
+  justify-content: center;
+  align-items: center;
+}
