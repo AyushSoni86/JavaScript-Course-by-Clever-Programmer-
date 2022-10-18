@@ -9,26 +9,51 @@ const heroImageDiv = document.getElementById('heroImage');
 const searchButton = document.getElementById('searchBtn');
 
 const searchInput = document.getElementById('heroName');
-// console.log(heroNames);
+
+const statToEmoji = {
+    intelligence: '🧠',
+    strength: '💪',
+    speed: '⚡',
+    durability: '🏋️‍♂️',
+    power: '📊',
+    combat: '⚔️',
+}
+
+const showHeroInfo = (character) => {
+    const name = `<h2>${character.name}</h2>`
+
+    const img = `<img src="${character.image.url}" height=400px width=auto/>`
+
+    const stats = Object.keys(character.powerstats).map(stat => {
+        return `<p>${statToEmoji[stat]} ${stat}: ${character.powerstats[stat]}</p>`
+    }).join('')
+
+    heroImageDiv.innerHTML = 
+    `<div class = 'heroInfo'>
+        <div>${img}</div>
+        <div class = 'hero-stat'><div>${name}</div><div>${stats.toUpperCase()}</div></div>
+    </div>`
+}
 
 const getRandomSuperHero = (id) => {
     fetch(`${BASE_URL}/${id}`)
         .then(response => response.json())
         .then(json => {
-            console.log(json.image.url)
-            heroImageDiv.innerHTML = `<img src =${json.image.url} height = 400px width = auto>`
+            const hero = json
+            showHeroInfo(hero);
         })
 }
 
-const getSearchSuperHero = (name) =>{
-    // console.log();
+const getSearchSuperHero = (name) => {
     fetch(`${BASE_URL}/search/${name}`)
-    .then(response => response.json())
-    .then(json => {
-        const hero = json.results[0];
-        heroImageDiv.innerHTML = `<img src =${hero.image.url} height = 400px width = auto>`
-    })
+        .then(response => response.json())
+        .then(json => {
+            const hero = json.results[0];
+            console.log(hero);
+            showHeroInfo(hero);
+        })
 }
+
 
 const getRandom = () => Math.ceil(Math.random() * 731);
 
