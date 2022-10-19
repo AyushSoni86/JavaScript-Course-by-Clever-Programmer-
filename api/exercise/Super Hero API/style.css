@@ -8,19 +8,18 @@
 body {
   background-image: url(images/360_F_303367473_rTRc0Cux44BK2qyMLZhLzyzLT0t9J8Y0.jpg);
   background-position: center;
-  background-repeat:no-repeat ;
-  background-attachment:fixed ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   margin-bottom: 60px;
 }
 
-h2{
+h2 {
   /* color: white; */
   font-size: 35px;
   align-items: center;
   justify-content: center;
 }
-
 
 .container {
   margin: 20px;
@@ -61,13 +60,13 @@ img {
   border-radius: 10px;
 }
 
-.heroInfo{
+.heroInfo {
   display: flex;
   gap: 30px;
 }
 
-.hero-stat{
-  display:flex ;
+.hero-stat {
+  display: flex;
   flex-direction: column;
   gap: 30px;
 }

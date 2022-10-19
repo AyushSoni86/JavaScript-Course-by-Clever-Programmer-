@@ -1,0 +1,13 @@
+body {
+  background-color: coral;
+  color: rgb(124, 64, 20);
+  font-family: cursive;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
